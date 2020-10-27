@@ -7,6 +7,9 @@ export const TodoReducer = (state = initialState, action) => {
       return [...state, action.payload];
     case Actions.DELETE_TODO:
       return state.filter((todo) => todo.id !== action.payload);
+    case Actions.HIDE_TODO:
+      const todo = state.find(id: id)
+      return 
     default:
       return state;
   }
